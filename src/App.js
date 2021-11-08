@@ -17,7 +17,7 @@ const DivButton = styled.div`
     color: blue;
   }
 `
-
+// api를 불러오는 방식 코드
 function App() {
   const [weather, setWeather] = useState('');
   const clickHandler = async() =>{
@@ -29,6 +29,7 @@ function App() {
       setWeather(response.data.weather[0].main);
     })
   };
+//
 
   return (
     // <>
