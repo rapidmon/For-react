@@ -24,7 +24,7 @@ const styles = {
     `,
 
     headblock: styled.div`
-    padding-top: 48px;
+    padding-top: 24px;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 24px;
@@ -33,18 +33,30 @@ const styles = {
         margin: 0;
         font-size: 36px;
         color: #343a40;
+        margin-bottom: 20px;
         }
+    .weather {
+        margin-bottom: 20px;
+    }
     .day {
-        margin-top: 4px;
+        margin-top: 5px;
         color: #868e96;
         font-size: 21px;
+        clear: both;
         }
     .tasks-left {
         color: #20c997;
         font-size: 18px;
-        margin-top: 40px;
+        margin-top: 20px;
         font-weight: bold;
+        clear: both;
         }
+    `,
+
+    weather: styled.div`
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
     `,
 
     box: styled.div`
