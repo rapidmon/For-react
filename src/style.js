@@ -57,14 +57,6 @@ const styles = {
     font-size: 18px;
     font-weight: bold;
     `,
-
-    box: styled.div`
-    flex: 1;
-    padding: 20px 32px;
-    padding-bottom: 48px;
-    overflow-y: auto;
-    background: white;
-    `
 }  
 
 export default styles;

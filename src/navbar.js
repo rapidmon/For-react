@@ -9,7 +9,7 @@ const Menu = styled.div`
  justify-content: flex-start;
  top: 0;
  width: 100%;
- z-index: 5;
+ z-index: 20;
  padding-top: 12px;
  padding-bottom: 12px;
 `;

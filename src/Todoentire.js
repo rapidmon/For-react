@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TodoItem from './TodoItem';
 import {useTodoState} from './Todocontext';
+import TodoCreate from './Todocreate';
 
 const Box = styled.div`
     flex: 1;
@@ -18,15 +19,13 @@ const TodoListBlock = styled.div`
   overflow-y: auto;
 `;
 
-function TodoList() {
+function Todoentire() {
   const todos = useTodoState();
-  const todosfilter = todos.filter(item => item.done === false);
 
   return (
-    <>
     <Box>
     <TodoListBlock>
-      {todosfilter.map(todo => (
+      {todos.map(todo => (
         <TodoItem
           key = {todo.id}
           id = {todo.id}
@@ -35,9 +34,9 @@ function TodoList() {
         />
       ))}
     </TodoListBlock>
+    <TodoCreate />
     </Box>
-    </>
   );
 }
 
-export default TodoList;
+export default Todoentire;

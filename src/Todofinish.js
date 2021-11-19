@@ -18,12 +18,11 @@ const TodoListBlock = styled.div`
   overflow-y: auto;
 `;
 
-function TodoList() {
+function Todofinish() {
   const todos = useTodoState();
-  const todosfilter = todos.filter(item => item.done === false);
+  const todosfilter = todos.filter(item => item.done === true);
 
   return (
-    <>
     <Box>
     <TodoListBlock>
       {todosfilter.map(todo => (
@@ -36,8 +35,7 @@ function TodoList() {
       ))}
     </TodoListBlock>
     </Box>
-    </>
   );
 }
 
-export default TodoList;
+export default Todofinish;

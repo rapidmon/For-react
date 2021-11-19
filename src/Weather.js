@@ -36,22 +36,16 @@ function Weather(){
     };
     return(
     <div>
-<<<<<<< HEAD
       {
         weather === '' ?
-        <><DivButton onClick={clickHandler}>Today Weather </DivButton>
-        <style.weather>{weather}</style.weather></>
+        <>
+        <DivButton onClick={clickHandler}>Today Weather </DivButton>
+        <style.weather>{weather}</style.weather>
+        </>
         : <div style={{display:'flex'}}><span>Today Weather</span><style.weather>{weather}</style.weather></div>
       }
-=======
-      <DivButton onClick={clickHandler}>Today Weather </DivButton><style.weather>{weather}</style.weather>
->>>>>>> 7cead883e5ed4cb6c724921fcb7b509482f86712
     </div>
     )
 }
 
-<<<<<<< HEAD
 export default Weather
-=======
-export default Weather
->>>>>>> 7cead883e5ed4cb6c724921fcb7b509482f86712
