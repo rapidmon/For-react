@@ -37,7 +37,7 @@ function App(){
           <Navbar/>
           <Routes> 
             <Route exact path="/" element={<Home/>}/> 
-            <Route path="/todo" element={<TodayTodo/>}/>
+            <Route path="/TodoList" element={<TodayTodo/>}/>
           </Routes>
         </div>
     </BrowserRouter>

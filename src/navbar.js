@@ -43,7 +43,7 @@ function Navbar(){
     return(
     <Menu>
      <Home><Link to="/">Home</Link></Home>
-     <Todo><Link to="/todo">Todo</Link></Todo>
+     <Todo><Link to="/TodoList">Todo</Link></Todo>
     </Menu>
     )
 }
