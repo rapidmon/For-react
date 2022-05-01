@@ -40,7 +40,7 @@ function App(){
             <Route path="/todo" element={<TodayTodo/>}/>
           </Routes>
         </div>
-      </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
